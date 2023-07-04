@@ -1,0 +1,94 @@
+{
+  "version": "0.1.32",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "deploy": "npm version patch && npm publish"
+  },
+  "peerDependencies": {
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "lib-gg",
+  "author": "Giovane Sedano",
+  "module": "dist/lib-gg.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/lib-gg.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/lib.gg.cjs.development.css",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/lib-gg.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^8.2.6",
+    "@storybook/addon-essentials": "^7.0.24",
+    "@storybook/addon-info": "^5.3.21",
+    "@storybook/addon-links": "^7.0.24",
+    "@storybook/addons": "^7.0.24",
+    "@storybook/react": "^7.0.24",
+    "@types/node-sass": "^4.11.3",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "autoprefixer": "^10.4.12",
+    "babel-loader": "^9.1.2",
+    "css-loader": "^5",
+    "cssnano": "^5.1.13",
+    "husky": "^8.0.3",
+    "node-sass": "^9.0.0",
+    "postcss": "^8.4.17",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-is": "^18.2.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-scss": "^4.0.0",
+    "sass": "^1.63.6",
+    "sass-loader": "^10",
+    "size-limit": "^8.2.6",
+    "style-loader": "^2",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.6.0",
+    "typescript": "^5.1.6",
+    "typescript-plugin-css-modules": "^3.4.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.6",
+    "@rollup/plugin-alias": "^3.1.0",
+    "webpack": "^5.88.1"
+  }
+}

@@ -1,0 +1,141 @@
+.css-hyum1k-MuiToolbar-root {
+  min-height: 52px !important;
+  max-height: 55px !important;
+}
+
+.topbar {
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 60px;
+  box-shadow: 0 2px 5px 0 RGB(0 0 0 / 26%);
+  padding: 8px;
+  height: 60px;
+  background-color: #38b6ff;
+}
+
+.header-conteiner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-item {
+  flex: 1;
+  margin-left: 10px;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
+
+.grow-2 {
+  flex-grow: 2;
+}
+
+.grow-4 {
+  flex-grow: 4;
+}
+
+.title-header {
+  font-size: 40px;
+  margin-left: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.header-search-color {
+  color: white;
+}
+
+.p-input-icon-left {
+  /* ::placeholder {   
+        color: white;
+        opacity: 1;   
+    }
+
+    :-ms-input-placeholder {        
+        color: white;
+    }
+
+    ::-ms-input-placeholder {        
+        color: white;
+    } */
+}
+
+.p-input-icon-left {
+  max-width: 300px;
+}
+
+.title-header-search-margin {
+  margin-left: 30px;
+}
+
+.grid-template-columns-4 {
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+}
+
+.button-size {
+  min-height: 80px;
+  min-width: 80px;
+}
+
+.box-menu {
+  margin-top: 10%;
+  text-align: center;
+}
+
+.box-menu-icon {
+  font-size: 25px;
+  color: rgba(1, 142, 188, 0.6);
+}
+
+p {
+  color: gray;
+}
+
+.menu-app-list {
+  width: 336px;
+  height: 300px;
+  right: 5px;
+  z-index: 1000;
+  margin-top: 57px;
+  position: fixed;
+  background-color: white;
+  color: #fff;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 6px;
+  overflow-y: auto;
+  cursor: pointer;
+}
+
+.menu-app-list-none {
+  width: 336px;
+  height: 300px;
+  right: 5px;
+  z-index: 1000;
+  margin-top: 57px;
+  position: fixed;
+  background-color: white;
+  color: #fff;
+  text-align: center;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 6px;
+  overflow-y: auto;
+  cursor: pointer;
+  display: none;
+}
+
+.header-component-current-operator {
+  pointer-events: none;
+  font-size: 10pt !important;
+}
