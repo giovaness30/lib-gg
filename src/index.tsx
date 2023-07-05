@@ -1,6 +1,7 @@
 // import React, { FC, HTMLAttributes, ReactChild } from 'react';
 
 import Conteiner from './components/Conteiner/Conteiner';
+import CustomTextField from './components/CustomTextField/CustomTextField';
 
 // export interface Props extends HTMLAttributes<HTMLDivElement> {
 //   /** custom content, defaults to 'the snozzberries taste like snozzberries' */
@@ -16,4 +17,4 @@ import Conteiner from './components/Conteiner/Conteiner';
 //   return <div>{children || `the snozzberries taste like snozzberries`}</div>;
 // };
 
-export { Conteiner };
+export { Conteiner, CustomTextField };
